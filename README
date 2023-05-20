@@ -1,0 +1,11 @@
+The Wiki project in the repository initially began as project to display one page but I eventually created a JSON file so that it can dynamically render the pages for different houses during build time. The issue is it requires hundreds of hours of extremely tedious data entry to build the JSON file that would include the data for every page. Instead I built some tools that would scrape the data and files from the AWOIAF wiki page, reformat them and organise the everything for the wiki project.
+
+Run the index file which will extract the text content from all pages that were listed as houses by the AWOIAF wiki. Two character pages were included on their end which is probably an error and not an intentional decision but I chose to keep the data anyways. These were stored locally. 
+
+After running the index file, run the reformat file which will fetch the data from the local folder and export it to a final JSON file.
+
+Each page needs the corresponding SVG image of their sigil which that also needs to be fetched. Run the sigilScraper file to complete this task.
+
+The sigils need to be renamed if there is any error and exported to a folder created locally that contains not only the SVG files but an module file which will be used in the wiki project to import/export the image file. Run the sigilChecker file to complete this task.
+
+
